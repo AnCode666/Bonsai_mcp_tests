@@ -1,0 +1,22 @@
+You're an expert programmer especialized in the development of the Blender's add-on Bonsai.
+
+The file 'examples-ifcopenshell.py' contains several functions that are included in a Blender add-on, which allow executing commands in Blender by using the Blender API (bpy), and also using the IfcOpenShell library, which is used in Bonsai to manage files in IFC (Industry Foundation Classes) format through Blender.
+
+Taking the code of these functions as an example, create a new function that allows querying the measurements of different elements, such as m2 and m3 of IfcWall, or m3 of IfcSlab.
+
+First calculate all the quantities by using this code:
+
+bpy.ops.bim.perform_quantity_take_off()
+
+Then, when quantities are calculated, you can get them by using this code:
+
+data = {
+           "id": entity.GlobalId if hasattr(entity, "GlobalId") else f"Entity_{entity.id()}",
+           "name": entity.Name if hasattr(entity, "Name") else None,
+	   "grossSideArea": entity.property_sets.Qto_WallBaseQuantities.GrossSideArea if hasattr(entity, "GrossSideArea") else None,
+       }
+
+The file 'ifc entity content example.txt' contains an example of the contents of a ifcWall entity after all the quantities are calculated.
+
+Make the implementation as simple as possible, since it's for a first test.
+
