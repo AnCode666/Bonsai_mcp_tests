@@ -4,6 +4,6 @@ This branch includes the files used during the live workshop held on **2025/08/2
 
 These files were used to create the prompt for the development of the tool **`get_ifc_quantities`**, and are as follows:
 
-- [examples-ifcopenshell.py](examples-ifcopenshell.py)
-- [ifc-entity-content-example.txt](ifc-entity-content-example.txt)
-- [prompt-generate-ifc-tool.txt](prompt-generate-ifc-tool.txt)
+- [examples-ifcopenshell.py](./workshop%20prompt%20files/examples-ifcopenshell.py)
+- [ifc-entity-content-example.txt](./workshop%20prompt%20files/ifc-entity-content-example.txt)
+- [prompt-generate-ifc-tool.txt](./workshop%20prompt%20files/prompt-generate-ifc-tool.txt)
